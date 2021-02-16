@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/formulario.css" media="screen" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+  <header>    
+  </header>
+  <main>
+    <article>
+      <section>
+        <form action="/registro_usuario.php">
+            <label for="nombre">Nombre y apellidos:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Correo electrónico" required autofocus>
+            <label for="contraseña">Contraseña:</label>
+              <input type="password" id="contraseña" name="contraseña" minlength="6" required>
+            <label for="telefono">Teléfono móvil:</label>
+              <input type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]+" title="Introduzca sólo valores numéricos">
+            <label for="fecha">Fecha de nacimiento:</label>
+              <input type="date" id="fecha" name="fecha">
+            <input type="submit" value="Dar de alta"></input>
+            <label for="recordar" id="recordar">Recordar contraseña</label>
+              <input type="checkbox" id="recordar" name="recordar">
+        </form>
+      </section>
+    </article>
+    </main>
+  <footer>   
+  </footer>
+</body>
+</html>
